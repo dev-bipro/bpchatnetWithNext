@@ -2,10 +2,9 @@ import Image from "next/image";
 import myLogo from "@/images/myLogo.svg";
 import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
-import From from "@/components/login/From";
-// import From from "@/components/registration/From";
+import From from "@/components/registration/From";
 
-export default function Login() {
+export default function Registration() {
   return (
     <main className="mt-40 flex flex-col items-center">
       <Image className="w-[122px] mb-5" src={myLogo} alt="BP ChatNet" />
