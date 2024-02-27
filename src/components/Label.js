@@ -1,6 +1,6 @@
 function Label({ forLabel, className, title }) {
   return (
-    <label for={forLabel} className={className}>
+    <label htmlFor={forLabel} className={className}>
       {title}
     </label>
   );

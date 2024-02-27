@@ -2,8 +2,7 @@ import Image from "next/image";
 import myLogo from "@/images/myLogo.svg";
 import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
-import Form from "@/components/registration/Form";
-import Link from "next/link";
+import From from "@/components/forgetPass/Form";
 
 export default function Registration() {
   return (
@@ -19,15 +18,11 @@ export default function Registration() {
         title="Get your BP ChatNet account now."
       />
       <div className="mb-6 p-4 bg-background-light rounded-base">
-        <Form />
-        <Paragraph
-          className="capitalize font-medium text-base text-common-text-color py-1 px-2 mt-4"
-          title="Already have an account ?"
-        >
-          <Link className="ml-2 text-background-light-green" href="/">
-            login
-          </Link>
-        </Paragraph>
+        {/* <Paragraph
+          className="bg-background-light-green capitalize font-medium text-base text-background-dark-green py-1 px-2 mb-4"
+          title="registration sucsess"
+        /> */}
+        <From />
       </div>
     </main>
   );

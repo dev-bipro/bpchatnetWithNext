@@ -8,12 +8,14 @@ const schema = new Schema({
   email: {
     type: String,
     required: true,
+    unique: true,
   },
   password: {
     type: String,
     required: true,
   },
-  otpForVerify: String,
+  otpForVerify: { type: String },
+  forgetOtp: { type: String },
   created_at: { type: Date, required: true, default: Date.now },
 });
 

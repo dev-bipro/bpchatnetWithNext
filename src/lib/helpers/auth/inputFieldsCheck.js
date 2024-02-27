@@ -62,3 +62,13 @@ export const loginInputsCheck = (email = "", password = "") => {
   }
   return inputErrors;
 };
+export const forgetInputsCheck = (email = "") => {
+  let inputErrors = null;
+
+  if (!email) {
+    inputErrors = {
+      email: "please enter your email",
+    };
+  }
+  return inputErrors;
+};

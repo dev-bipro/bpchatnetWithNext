@@ -2,7 +2,8 @@ import Image from "next/image";
 import myLogo from "@/images/myLogo.svg";
 import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
-import From from "@/components/login/From";
+import Form from "@/components/login/Form";
+import Link from "next/link";
 // import From from "@/components/registration/From";
 
 export default function Login() {
@@ -12,7 +13,7 @@ export default function Login() {
       <Heading
         tag="h1"
         className="font-semibold text-common-text-color text-2xl capitalize mb-1"
-        title="register"
+        title="login"
       />
       <Paragraph
         className="font-semibold text-common-text-color text-base opacity-70 capitalize mb-4"
@@ -23,7 +24,18 @@ export default function Login() {
           className="bg-background-light-green capitalize font-medium text-base text-background-dark-green py-1 px-2 mb-4"
           title="registration sucsess"
         /> */}
-        <From />
+        <Form />
+        <Paragraph
+          className="capitalize font-medium text-base text-common-text-color py-1 px-2 mt-4"
+          title="Already have an account ?"
+        >
+          <Link
+            className="ml-2 text-background-light-green"
+            href="/registration"
+          >
+            register
+          </Link>
+        </Paragraph>
       </div>
     </main>
   );
